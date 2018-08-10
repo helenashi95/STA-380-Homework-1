@@ -1,0 +1,18 @@
+#Part A
+![Part A](Stats/Exercise 1/PartA.png) 
+#ERRORS KNITTING
+
+#Part B
+![Part B](Stats/Exercise 1/PartB.png)
+
+
+#Exploratory Analysis: Green Buildings
+
+```{r}
+green = read.csv('greenbuildings.csv', header = T)
+attach(green)
+
+#correlation matrix
+correlated = cor(green, method = c("pearson"))
+correlated
+```
